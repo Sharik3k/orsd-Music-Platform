@@ -8,8 +8,8 @@ This repository contains the initial development of a domain ontology for a musi
 * **Scope:** The ontology covers the structure of music catalogs (artists, albums, tracks), user entities (profiles, playlists), and genre classifications. It explicitly excludes financial aspects (royalties, subscription billing) and copyright management.
 
 ## Repository Structure
-* `spotify_ontology.owl` — The core ontology file developed in Protégé (OWL/RDF format) containing classes, properties, and initial instances.
-* `orsd-template.docx` — The Ontology Requirements Specification Document (ORSD) outlining design decisions, intended uses, and constraints.
+* `Music_Platform_ontology.owl` — The core ontology file developed in Protégé (OWL/RDF format) containing classes, properties, and initial instances.
+* `orsd-Music_Platform.docx` — The Ontology Requirements Specification Document (ORSD) outlining design decisions, intended uses, and constraints.
 
 ## Key Concepts (Core Classes)
 The initial model includes the following hierarchy:
