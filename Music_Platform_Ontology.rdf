@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology/"
+     xml:base="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Music_Platform_Ontology="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#belongsToAlbum -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#belongsToAlbum">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Track"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Album"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#createsTrack -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#createsTrack">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Track"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#followsArtist -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#followsArtist">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#hasGenre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#hasTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#hasTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#releaseYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#releaseYear">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Album -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Album">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#AudioContent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#AudioContent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Collection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Collection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Playlist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Playlist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Track -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Track">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#AudioContent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#User">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#BlindingLights -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#BlindingLights">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Track"/>
+        <Music_Platform_Ontology:hasGenre rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#SynthPop"/>
+        <Music_Platform_Ontology:hasTitle>Blinding Lights</Music_Platform_Ontology:hasTitle>
+        <Music_Platform_Ontology:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2019</Music_Platform_Ontology:releaseYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#BohemianRhapsody -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#BohemianRhapsody">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Track"/>
+        <Music_Platform_Ontology:hasGenre rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Rock"/>
+        <Music_Platform_Ontology:hasTitle>Bohemian Rhapsody</Music_Platform_Ontology:hasTitle>
+        <Music_Platform_Ontology:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1975</Music_Platform_Ontology:releaseYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#CruelSummer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#CruelSummer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Track"/>
+        <Music_Platform_Ontology:hasGenre rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Pop"/>
+        <Music_Platform_Ontology:hasTitle>Сruel Summer</Music_Platform_Ontology:hasTitle>
+        <Music_Platform_Ontology:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2019</Music_Platform_Ontology:releaseYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#DaftPunk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#DaftPunk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist"/>
+        <Music_Platform_Ontology:createsTrack rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#GetLucky"/>
+        <Music_Platform_Ontology:hasTitle>Daft Punk</Music_Platform_Ontology:hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Electronic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Electronic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#GetLucky -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#GetLucky">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Track"/>
+        <Music_Platform_Ontology:hasGenre rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Electronic"/>
+        <Music_Platform_Ontology:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2013</Music_Platform_Ontology:hasTitle>
+        <Music_Platform_Ontology:hasTitle>Get Lucky</Music_Platform_Ontology:hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#HipHop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#HipHop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Humble -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Humble">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Track"/>
+        <Music_Platform_Ontology:hasGenre rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#HipHop"/>
+        <Music_Platform_Ontology:hasTitle>Humble</Music_Platform_Ontology:hasTitle>
+        <Music_Platform_Ontology:releaseYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</Music_Platform_Ontology:releaseYear>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#KendrickLamar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#KendrickLamar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist"/>
+        <Music_Platform_Ontology:createsTrack rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Humble"/>
+        <Music_Platform_Ontology:hasTitle>Kendrick Lamar</Music_Platform_Ontology:hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Pop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Queen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Queen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist"/>
+        <Music_Platform_Ontology:createsTrack rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#BohemianRhapsody"/>
+        <Music_Platform_Ontology:hasTitle>Queen</Music_Platform_Ontology:hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Rock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#SynthPop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#SynthPop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#TaylorSwift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#TaylorSwift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist"/>
+        <Music_Platform_Ontology:createsTrack rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#CruelSummer"/>
+        <Music_Platform_Ontology:hasTitle>Taylor Swift</Music_Platform_Ontology:hasTitle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#TheWeeknd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#TheWeeknd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#Artist"/>
+        <Music_Platform_Ontology:createsTrack rdf:resource="http://www.semanticweb.org/oleksiirak/ontologies/2026/3/Music_Platform_Ontology#BlindingLights"/>
+        <Music_Platform_Ontology:hasTitle>The Weeknd</Music_Platform_Ontology:hasTitle>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
